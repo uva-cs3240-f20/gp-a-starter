@@ -25,7 +25,6 @@ while (numberOfGuessesLeft>0):
         #Replaces "-" with correctly guessed letter
         for i in range(len(secretWord)):
             if secretWord[i]== guess:
-                x = secretWord[i:].find(guess)
                 hiddenWord= hiddenWord[0:i+1]+guess.upper()+hiddenWord[i+2:]
 
         if ("-" in hiddenWord):
